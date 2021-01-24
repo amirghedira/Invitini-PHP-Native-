@@ -211,6 +211,10 @@
                             </select>
                         </div>
                     </div>
+                    <div style="width:100%;display:flex;align-items:center;justify-content:center;">
+                        <input type="file" multiple />
+                    </div>
+
                     <div class="section-container button-container">
                         <button class="button">Submit</button>
                         <button class="button danger cancel-button">Cancel</button>

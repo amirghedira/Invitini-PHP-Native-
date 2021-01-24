@@ -8,8 +8,8 @@
 
 .navbrand-text {
     font-weight: bold;
-    font-size: 29px;
-    color: #2474F1;
+    font-size: 24px;
+    color: black;
     margin: 0;
 }
 
@@ -25,18 +25,13 @@
 }
 
 .card {
-    width: 100%;
+    width: 500px;
     background-color: white;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.invite-img {
-    height: 80vh;
-    width: 100%;
 }
 
 main {
@@ -48,24 +43,24 @@ main {
 
     <div class="container">
         <div class="row main-container">
-            <div class="col">
-                <img class="invite-img" src="../assets/invite_img.svg" />
-            </div>
-            <div class="col-4">
+            <div class="col-6">
                 <div class="card">
                     <div class="card-head">
-                        <h1 class="navbrand-text">
-                            Invitini
+                        <h1 class="navbrand-text" style="color:black;">
+                            Create an account
                         </h1>
 
                     </div>
                     <div class="section">
                         <input class="form-control" placeholder="username" />
-                        <input class="form-control" placeholder="password" />
-
+                        <input class="form-control" placeholder="lastname" />
+                        <input class="form-control" placeholder="firstname" />
+                        <input type="number" class="form-control" placeholder="age" />
+                        <input type="number" class="form-control" placeholder="phone" />
+                        <input type="file" />
                     </div>
                     <div class="section">
-                        <button class="button">Login</button>
+                        <button class="button">Sign up</button>
                     </div>
                 </div>
             </div>

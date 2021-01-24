@@ -7,8 +7,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -88,6 +89,31 @@ main {
     margin: 0;
 }
 
+.user-image-nav {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+.sign {
+    border: 2px solid #d1d0d0;
+    border-radius: 20px;
+    padding: 4px 7px 5px 7px;
+
+}
+
+.sign:hover {
+    background-color: #2474F1;
+    color: white;
+    border-color: #2474F1;
+    box-shadow: inset rgba(255, 255, 255, 0.1) 0px 2px 0px, inset rgba(255, 255, 255, 0.04) 0px 0px 0px 2px, rgba(0, 0, 0, 0.25) 0px 2px 10px;
+
+}
+
 .nav-items {
     list-style: none;
     display: flex;
@@ -104,17 +130,37 @@ main {
 
 .nav-item-text {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
+    margin: 0;
     color: black;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px 5px 10px;
+
+
+}
+
+.user-name {
+    font-weight: 700;
+}
+
+.user-info:hover {
+    border-radius: 20px;
+    background-color: #d1d0d0;
+
 }
 </style>
 
 <body>
     <nav class="navbar">
         <div class="navBrand">
-            <h1 class="navbrand-text">
+            <a href="/web/events/" style="text-decoration: none;" class="navbrand-text">
                 Invitini
-            </h1>
+            </a>
 
         </div>
         <ul class="nav-items">
@@ -128,10 +174,29 @@ main {
                     Profile
                 </h2>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <h2 class="nav-item-text" style="color:red;">
                     Logout
                 </h2>
+            </li> -->
+            <li class="nav-item">
+                <a href="/web/events/signup" style="text-decoration: none;" class="nav-item-text sign">
+                    Sign up
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="/web/events/login" style="text-decoration: none;" class="nav-item-text sign">
+                    Log in
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="user-info" href="/web/events/profile" style="text-decoration:none;">
+                    <img class="user-image-nav" src="https://addresti-storage.s3.amazonaws.com/1610654110764" />
+
+                    <h2 class="nav-item-text user-name">
+                        Amir ghedira
+                    </h2>
+                </a>
             </li>
 
         </ul>
